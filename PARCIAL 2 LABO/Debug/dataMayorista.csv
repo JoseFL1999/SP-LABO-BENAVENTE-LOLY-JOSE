@@ -1,0 +1,8 @@
+id_servicio,descripcion,tipo,precioUnitario,cantidad,totalServicio
+51,ensamble vestido,2,860.00,25,21500.00
+54,boton camisa,2,145.00,120,17400.00
+60,cambio boton,2,70.00,10,700.00
+63,boton camisa,2,145.00,120,17400.00
+72,boton camisa,2,145.00,60,8700.00
+73,cambio boton,2,70.00,25,1750.00
+74,ensamble vestido,2,860.00,15,12900.00
