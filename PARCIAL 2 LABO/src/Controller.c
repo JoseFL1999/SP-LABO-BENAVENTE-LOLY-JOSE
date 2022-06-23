@@ -229,22 +229,25 @@ int controller_showAService(LinkedList* pArrayListService, LinkedList* pListServ
 	{
 		if(!ll_sort(auxListService, Service_sortForDescription,1))
 		{
-			for(int i=0;i<ll_len(auxListService);i++)
+			if(ll_len(pListServiceMinorista)<1 && ll_len(pListServiceMayorista)<1 && ll_len(pListServiceExportar)<1)
 			{
-				auxService = ll_get(auxListService,i);
-				if(!Service_getType(auxService, &type))
+				for(int i=0;i<ll_len(auxListService);i++)
 				{
-					if(type==1)
+					auxService = ll_get(auxListService,i);
+					if(!Service_getType(auxService, &type))
 					{
-						ll_add(pListServiceMinorista,auxService);
-					}
-					else if(type==2)
-					{
-						ll_add(pListServiceMayorista,auxService);
-					}
-					else if(type==3)
-					{
-						ll_add(pListServiceExportar,auxService);
+						if(type==1 )
+						{
+							ll_add(pListServiceMinorista,auxService);
+						}
+						else if(type==2 )
+						{
+							ll_add(pListServiceMayorista,auxService);
+						}
+						else if(type==3 )
+						{
+							ll_add(pListServiceExportar,auxService);
+						}
 					}
 				}
 			}

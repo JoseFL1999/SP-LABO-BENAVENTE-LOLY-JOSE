@@ -546,7 +546,6 @@ void ll_map(LinkedList* this, void (*fn)(void* element))
 			fn(ll_get(this,i));
 		}
 	}
-
 	//return returnAux;
 }
 
